@@ -1,7 +1,7 @@
 def binary_search(collection,element): 
     start ,end = 0, len(collection)-1
     while start<=end:
-        mid=(start+end)//2
+        mid=(start+(end-start))//2
         if collection[mid] == element:
             print(f"{element} is present")
             break
